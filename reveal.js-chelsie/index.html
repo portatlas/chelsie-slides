@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="fragments">
+					<h1>chelsie</h1>
+					<h3 class="fragments"><i><span class="fragment">you are not alone</span></i></h3>
+				</section>
+				<section data-transition="convex">
+					<h2>objectives</h2>
+					<br>
+					<ul>
+					<li>give a voice to survivors</li>
+					<li>foster community healing</li>
+					<li>shed light on campus sexual assault</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
+					<h2>DEMO</h2>
+				</section>
+				<section data-transition="convex">
+					<h2>chelsie.io</h2>
+					<br>
+					<h4>a public API that serves local resources for people in crisis</h4>
+						<ul>
+							<li>chelsie.io/centers</li>
+							<li><a href="http://chelsie.io/centers/5" target='_blank'>chelsie.io/centers/:id</a></li>
+							<li>chelsie.io/centers/:id/services</li>
+							<li>chelsie.io/centers/:id/population</li>
+							<li>chelsie.io/centers/search/:query</li>
+							<li>chelsie.io/centers/geo/:lat/:lng/:radius</li>
+						</ul>
+				</section>
+				<section data-background-transition="zoom">
+					<section data-background="#222">
+						<h2>technology stack</h2>
+					</section>
+					<section data-background="#222">
+						<h3>front-end: react-native</h3>
+						<p>college students are mobile first</p>
+						<a href="#" class="navigate-down">
+							<img src="./imgs/react-native.png">
+						</a>
+					</section>
+					<section data-background="#222">
+						<h3>backend: rails</h3>
+						<p>lightweight, decoupled API</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img src="./imgs/rails.png">
+						</a>
+					</section>
+					<section data-background="#222">
+						<h3>deployment: heroku</h3>
+							<p>easy as 3.14...</p>
+						<a href="#" class="navigate-down">
+							<img src="./imgs/heroku.jpg">
+						</a>
+					</section>
+				</section>
+				<section data-transition="convex">
+					<h2>team cadence</h2>
+					<br>
+					<ul>
+						<li>played 'hot potato' with complex tasks</li>
+						<li>have fun and don't let the subject matter get you down</li>
+						<li>define tasks as a group but pick what you work on individually</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
+					<h2>next steps</h2>
+					<br>
+						<ul>
+							<li>device agnostic</li>
+							<li>launch and let the community tell us what to do next</li>
+							<li>provide support and lend visibility</li>
+						</ul>
+				</section>
+				<section data-transition="convex">
+					<h2>questions</h2>
+				</section>
+				<!-- section data-transition="convex">
+					<h2>API: Local Crisis Resources</h2>
+						<ul>Hurdles
+							<li>Aninomity and privacy</li>
+							<li>dealing with errors</li>
+						</ul>
+						<ul>Success
+							<li>Uncertain about the direction but were able to create it</li>
+							<li>reshuffled work and got things done</li>
+						</ul>
+				</section> -->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
